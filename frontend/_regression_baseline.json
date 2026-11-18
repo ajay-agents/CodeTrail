@@ -1,0 +1,1579 @@
+[
+ {
+  "key": "python/python-ch1/sec:Say hello with print()",
+  "lang": "python",
+  "result": {
+   "out": "Hello, Pythonista!\nPython reads top to bottom\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch1/sec:Numbers and math",
+  "lang": "python",
+  "result": {
+   "out": "5\n2.5\nPython\nhahaha\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch1/sec:Comments: notes for humans",
+  "lang": "python",
+  "result": {
+   "out": "Comments explain why\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch1/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch2/sec:Variables are labelled boxes",
+  "lang": "python",
+  "result": {
+   "out": "10\n15\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch2/sec:Four types you will meet first",
+  "lang": "python",
+  "result": {
+   "out": "<class 'int'>\n<class 'float'>\n<class 'str'>\n<class 'bool'>\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch2/sec:f-strings: text with blanks",
+  "lang": "python",
+  "result": {
+   "out": "Ada scored 92\nHalf of that is 46.0\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch2/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch3/sec:if, elif and else",
+  "lang": "python",
+  "result": {
+   "out": "It's mild\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch3/sec:Comparison operators",
+  "lang": "python",
+  "result": {
+   "out": "True\nTrue\nTrue\nFalse\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch3/sec:Combining conditions with and, or, not",
+  "lang": "python",
+  "result": {
+   "out": "Teen ticket\nFalse\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch3/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch4/sec:for loops and range()",
+  "lang": "python",
+  "result": {
+   "out": "0\n1\n2\n3\n4\n2\n3\n4\n5\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch4/sec:while loops",
+  "lang": "python",
+  "result": {
+   "out": "10\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch4/sec:break and continue",
+  "lang": "python",
+  "result": {
+   "out": "0\n1\n2\n4\n5\n6\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch4/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch5/sec:def, parameters and return",
+  "lang": "python",
+  "result": {
+   "out": "16\n81\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch5/sec:Default and keyword arguments",
+  "lang": "python",
+  "result": {
+   "out": "Hello, Ada!\nHi, Ada!\nHey, Ada!\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch5/sec:Where variables live (scope)",
+  "lang": "python",
+  "result": {
+   "out": "8\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch5/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch6/sec:Lists and tuples",
+  "lang": "python",
+  "result": {
+   "out": "['apple', 'banana', 'cherry']\napple\ncherry\n['apple', 'banana', 'cherry', 'date']\n3 4\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch6/sec:Dictionaries",
+  "lang": "python",
+  "result": {
+   "out": "28\n{'Ada': 28, 'Sam': 34, 'Max': 19}\n0\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch6/sec:Sets and common patterns",
+  "lang": "python",
+  "result": {
+   "out": "3\nTrue\n3\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch6/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch7/sec:Classes and instances",
+  "lang": "python",
+  "result": {
+   "out": "Rex\nFido\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch7/sec:Methods and __init__",
+  "lang": "python",
+  "result": {
+   "out": "Rex is 4 years old\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch7/sec:Inheritance basics",
+  "lang": "python",
+  "result": {
+   "out": "Tom says meow\nBessie makes a sound\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch7/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch8/sec:Number guessing game",
+  "lang": "python",
+  "result": {
+   "out": "3: too low\n9: too high\n6: too low\n7: correct!\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch8/sec:Quiz maker",
+  "lang": "python",
+  "result": {
+   "out": "You scored 2 out of 3\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch8/sec:Expense tracker",
+  "lang": "python",
+  "result": {
+   "out": "food 19.75\ntransport 5\nTotal: 24.75\n",
+   "error": null
+  }
+ },
+ {
+  "key": "python/python-ch8/challenge-starter",
+  "lang": "python",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch1/sec:Anatomy of a C program",
+  "lang": "c",
+  "result": {
+   "out": "Hello, C!\nEvery statement ends with a semicolon\n",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch1/sec:Printing numbers and math",
+  "lang": "c",
+  "result": {
+   "out": "5\n2\n2.500000\nSum: 10, product: 24\n",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch1/sec:Comments: notes for humans",
+  "lang": "c",
+  "result": {
+   "out": "Comments are ignored\n",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch1/challenge-starter",
+  "lang": "c",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch2/sec:Declaring variables",
+  "lang": "c",
+  "result": {
+   "out": "Age: 15\nPrice: 99.50\nGrade: A\n",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch2/sec:Math with variables",
+  "lang": "c",
+  "result": {
+   "out": "Each gets 3\nLeft over: 1\nExact share: 3.5\n",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch2/sec:Format specifiers",
+  "lang": "c",
+  "result": {
+   "out": "Ada scored 92\nHalf of that is 46.0\nPadded: [   92]\n",
+   "error": null
+  }
+ },
+ {
+  "key": "c/c-ch2/challenge-starter",
+  "lang": "c",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch1/sec:Anatomy of a C++ program",
+  "lang": "cpp",
+  "result": {
+   "out": "Hello, C++!\nChain output with <<\n",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch1/sec:Numbers and math",
+  "lang": "cpp",
+  "result": {
+   "out": "5\n2\n2.5\nSum: 10\n",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch1/sec:Comments and namespaces",
+  "lang": "cpp",
+  "result": {
+   "out": "No using-namespace needed\n",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch1/challenge-starter",
+  "lang": "cpp",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch2/sec:Declaring variables",
+  "lang": "cpp",
+  "result": {
+   "out": "Ada is 15\nPrice: 99.5\nStudent? 1\n",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch2/sec:Math with variables",
+  "lang": "cpp",
+  "result": {
+   "out": "Each gets 3\nLeft over: 1\nExact share: 3.5\n",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch2/sec:Working with strings",
+  "lang": "cpp",
+  "result": {
+   "out": "Ada Lovelace\nLength: 12\n",
+   "error": null
+  }
+ },
+ {
+  "key": "cpp/cpp-ch2/challenge-starter",
+  "lang": "cpp",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch1/sec:Anatomy of a Java program",
+  "lang": "java",
+  "result": {
+   "out": "Hello, Java!\nEvery statement ends with a semicolon\n",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch1/sec:Printing and math",
+  "lang": "java",
+  "result": {
+   "out": "5\n2\n2.5\nSum: 10\nNo new line, then a new line\n",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch1/sec:Comments: notes for humans",
+  "lang": "java",
+  "result": {
+   "out": "Comments are ignored\n",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch1/challenge-starter",
+  "lang": "java",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch2/sec:Declaring variables",
+  "lang": "java",
+  "result": {
+   "out": "Ada is 15\nPrice: 99.5\nStudent? true\nGrade: A\n",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch2/sec:Math with variables",
+  "lang": "java",
+  "result": {
+   "out": "Each gets 3\nLeft over: 1\nExact share: 3.5\n",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch2/sec:Formatted output with printf",
+  "lang": "java",
+  "result": {
+   "out": "Ada scored 92\nHalf of that is 46.0\nPadded: [   92]\n",
+   "error": null
+  }
+ },
+ {
+  "key": "java/java-ch2/challenge-starter",
+  "lang": "java",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch1/sec:Say hello with console.log",
+  "lang": "js",
+  "result": {
+   "out": "Hello, JavaScript!\n5\nPython\nhahaha\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch1/sec:Variables: const and let",
+  "lang": "js",
+  "result": {
+   "out": "Ada 15\nAda has 15 points\nstring number\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch1/sec:Operators and a classic gotcha",
+  "lang": "js",
+  "result": {
+   "out": "2.5\n1\n55\n3\nfalse\ntrue\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch1/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch2/sec:Functions",
+  "lang": "js",
+  "result": {
+   "out": "Hello, Ada!\n42\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch2/sec:Arrays and their methods",
+  "lang": "js",
+  "result": {
+   "out": "5\n1\n[ 2, 4, 6, 8, 10 ]\n[ 2, 4 ]\ntrue\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch2/sec:Objects",
+  "lang": "js",
+  "result": {
+   "out": "Ada\n92\n2\n{ name: 'Ada', score: 92, skills: [ 'JS', 'SQL' ] }\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch2/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch3/sec:if, else if and else",
+  "lang": "js",
+  "result": {
+   "out": "Good afternoon\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch3/sec:for and while loops",
+  "lang": "js",
+  "result": {
+   "out": "0\n1\n2\n3\n4\n10\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch3/sec:switch and the ternary operator",
+  "lang": "js",
+  "result": {
+   "out": "Wednesday\nadult\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch3/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch4/sec:Selecting elements",
+  "lang": "js",
+  "result": {
+   "out": "Hello, DOM!\nBUTTON\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch4/sec:Changing text and styles",
+  "lang": "js",
+  "result": {
+   "out": "Welcome! blue\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch4/sec:Event listeners",
+  "lang": "js",
+  "result": {
+   "out": "Clicked 1 time(s)\nClicked 2 time(s)\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch4/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch5/sec:Promises",
+  "lang": "js",
+  "result": {
+   "out": "42\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch5/sec:async and await",
+  "lang": "js",
+  "result": {
+   "out": "42\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch5/sec:fetch and JSON",
+  "lang": "js",
+  "result": {
+   "out": "Paris: 18C, Cloudy\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch5/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch6/sec:import and export",
+  "lang": "js",
+  "result": {
+   "out": "42\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch6/sec:npm basics",
+  "lang": "js",
+  "result": {
+   "out": "Packages add code you did not write yourself.\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch6/sec:Bundlers and build tools",
+  "lang": "js",
+  "result": {
+   "out": "A bundler combines many files into one, ready for the browser.\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch6/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": "ReferenceError: timesThree is not defined (line 5)"
+  }
+ },
+ {
+  "key": "js/js-ch7/sec:class and constructor",
+  "lang": "js",
+  "result": {
+   "out": "Rex 4\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch7/sec:Methods",
+  "lang": "js",
+  "result": {
+   "out": "Rex is 4 years old\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch7/sec:Inheritance",
+  "lang": "js",
+  "result": {
+   "out": "Tom says meow\nBessie makes a sound\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch7/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch8/sec:Todo list",
+  "lang": "js",
+  "result": {
+   "out": "[x] Learn JS\n[ ] Build a project\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch8/sec:Weather app",
+  "lang": "js",
+  "result": {
+   "out": "Paris: 18°C, Cloudy\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch8/sec:Quiz game",
+  "lang": "js",
+  "result": {
+   "out": "You scored 2 out of 3\n",
+   "error": null
+  }
+ },
+ {
+  "key": "js/js-ch8/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch1/sec:An algorithm is a recipe",
+  "lang": "js",
+  "result": {
+   "out": "108\n",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch1/sec:Counting steps",
+  "lang": "js",
+  "result": {
+   "out": "{ max: 9, steps: 3 }\n{ max: 9, steps: 7 }\n",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch1/sec:Big-O at a glance",
+  "lang": "js",
+  "result": {
+   "out": "100\n10000\n",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch1/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "undefined\n",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch2/sec:Linear search",
+  "lang": "js",
+  "result": {
+   "out": "2\n-1\n",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch2/sec:Binary search",
+  "lang": "js",
+  "result": {
+   "out": "{ index: 5, steps: 2 }\n{ index: -1, steps: 3 }\n",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch2/sec:Why halving wins",
+  "lang": "js",
+  "result": {
+   "out": "Items: 1000\nSteps to find the last item: 10\nSteps for linear search: 1000\n",
+   "error": null
+  }
+ },
+ {
+  "key": "dsa/dsa-ch2/challenge-starter",
+  "lang": "js",
+  "result": {
+   "out": "undefined\n",
+   "error": null
+  }
+ },
+ {
+  "key": "sql/sql-ch1/sec:Ask a table a question",
+  "lang": "sql",
+  "result": {
+   "results": [
+    {
+     "cols": [
+      "id",
+      "name",
+      "city",
+      "course",
+      "score",
+      "age"
+     ],
+     "rows": [
+      [
+       1,
+       "Aarav",
+       "Pune",
+       "Python",
+       82,
+       17
+      ],
+      [
+       2,
+       "Diya",
+       "Delhi",
+       "C",
+       91,
+       18
+      ],
+      [
+       3,
+       "Kabir",
+       "Jaipur",
+       "C++",
+       74,
+       17
+      ],
+      [
+       4,
+       "Meera",
+       "Mumbai",
+       "Python",
+       88,
+       19
+      ],
+      [
+       5,
+       "Rohan",
+       "Pune",
+       "SQL",
+       69,
+       18
+      ],
+      [
+       6,
+       "Saanvi",
+       "Chennai",
+       "React",
+       95,
+       18
+      ],
+      [
+       7,
+       "Vihaan",
+       "Delhi",
+       "Python",
+       67,
+       17
+      ],
+      [
+       8,
+       "Anaya",
+       "Kolkata",
+       "SQL",
+       79,
+       19
+      ],
+      [
+       9,
+       "Ishaan",
+       "Mumbai",
+       "C",
+       85,
+       18
+      ],
+      [
+       10,
+       "Tara",
+       "Jaipur",
+       "React",
+       72,
+       17
+      ],
+      [
+       11,
+       "Neel",
+       "Chennai",
+       "C++",
+       90,
+       19
+      ],
+      [
+       12,
+       "Zoya",
+       "Kolkata",
+       "Python",
+       94,
+       18
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "key": "sql/sql-ch1/sec:Filter rows with WHERE",
+  "lang": "sql",
+  "result": {
+   "results": [
+    {
+     "cols": [
+      "name",
+      "score"
+     ],
+     "rows": [
+      [
+       "Diya",
+       91
+      ],
+      [
+       "Saanvi",
+       95
+      ],
+      [
+       "Neel",
+       90
+      ],
+      [
+       "Zoya",
+       94
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "key": "sql/sql-ch1/sec:Sort and limit",
+  "lang": "sql",
+  "result": {
+   "results": [
+    {
+     "cols": [
+      "name",
+      "score"
+     ],
+     "rows": [
+      [
+       "Saanvi",
+       95
+      ],
+      [
+       "Zoya",
+       94
+      ],
+      [
+       "Diya",
+       91
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "key": "sql/sql-ch1/challenge-starter",
+  "lang": "sql",
+  "result": {
+   "results": []
+  }
+ },
+ {
+  "key": "sql/sql-ch2/sec:AND, OR, IN and LIKE",
+  "lang": "sql",
+  "result": {
+   "results": [
+    {
+     "cols": [
+      "name",
+      "course",
+      "score"
+     ],
+     "rows": [
+      [
+       "Diya",
+       "C",
+       91
+      ],
+      [
+       "Ishaan",
+       "C",
+       85
+      ],
+      [
+       "Neel",
+       "C++",
+       90
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "key": "sql/sql-ch2/sec:Count, average, max",
+  "lang": "sql",
+  "result": {
+   "results": [
+    {
+     "cols": [
+      "students",
+      "average",
+      "best"
+     ],
+     "rows": [
+      [
+       12,
+       82.2,
+       95
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "key": "sql/sql-ch2/sec:GROUP BY",
+  "lang": "sql",
+  "result": {
+   "results": [
+    {
+     "cols": [
+      "course",
+      "students",
+      "average"
+     ],
+     "rows": [
+      [
+       "C",
+       2,
+       88
+      ],
+      [
+       "React",
+       2,
+       83.5
+      ],
+      [
+       "Python",
+       4,
+       82.8
+      ],
+      [
+       "C++",
+       2,
+       82
+      ],
+      [
+       "SQL",
+       2,
+       74
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "key": "sql/sql-ch2/challenge-starter",
+  "lang": "sql",
+  "result": {
+   "results": []
+  }
+ },
+ {
+  "key": "git/git-ch1/sec:Create a repository",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    },
+    {
+     "cmd": "echo \"My first notes\" > notes.txt",
+     "out": ""
+    },
+    {
+     "cmd": "ls",
+     "out": "notes.txt"
+    },
+    {
+     "cmd": "git status",
+     "out": "On branch main\n\nNo commits yet\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\tnotes.txt\n\nnothing added to commit but untracked files present (use \"git add\" to track)"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "main",
+    "branches": {},
+    "wt": {
+     "notes.txt": "My first notes\n"
+    },
+    "commits": [],
+    "log": [],
+    "headTree": {},
+    "clean": false
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/\n$ echo \"My first notes\" > notes.txt\n$ ls\nnotes.txt\n$ git status\nOn branch main\n\nNo commits yet\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\tnotes.txt\n\nnothing added to commit but untracked files present (use \"git add\" to track)",
+   "error": null
+  }
+ },
+ {
+  "key": "git/git-ch1/sec:Stage and commit",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    },
+    {
+     "cmd": "echo \"My first notes\" > notes.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add notes.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git status",
+     "out": "On branch main\n\nNo commits yet\n\nChanges to be committed:\n  (use \"git restore --staged <file>...\" to unstage)\n\tnew file:   notes.txt"
+    },
+    {
+     "cmd": "git commit -m \"Add notes\"",
+     "out": "[main (root-commit) cf7a931] Add notes\n 1 file changed, 1 insertion(+)\n create mode 100644 notes.txt"
+    },
+    {
+     "cmd": "git status",
+     "out": "On branch main\n\nnothing to commit, working tree clean"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "main",
+    "branches": {
+     "main": "cf7a931b578ce7a3ab42361519e3758bc9a66f91"
+    },
+    "wt": {
+     "notes.txt": "My first notes\n"
+    },
+    "commits": [
+     {
+      "id": "cf7a931b578ce7a3ab42361519e3758bc9a66f91",
+      "msg": "Add notes",
+      "parents": [],
+      "tree": {
+       "notes.txt": "My first notes\n"
+      }
+     }
+    ],
+    "log": [
+     "Add notes"
+    ],
+    "headTree": {
+     "notes.txt": "My first notes\n"
+    },
+    "clean": true
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/\n$ echo \"My first notes\" > notes.txt\n$ git add notes.txt\n$ git status\nOn branch main\n\nNo commits yet\n\nChanges to be committed:\n  (use \"git restore --staged <file>...\" to unstage)\n\tnew file:   notes.txt\n$ git commit -m \"Add notes\"\n[main (root-commit) cf7a931] Add notes\n 1 file changed, 1 insertion(+)\n create mode 100644 notes.txt\n$ git status\nOn branch main\n\nnothing to commit, working tree clean",
+   "error": null
+  }
+ },
+ {
+  "key": "git/git-ch1/sec:Read the history",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    },
+    {
+     "cmd": "echo \"line one\" > notes.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add notes.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git commit -m \"Add first line\"",
+     "out": "[main (root-commit) 754ad2a] Add first line\n 1 file changed, 1 insertion(+)\n create mode 100644 notes.txt"
+    },
+    {
+     "cmd": "echo \"line two\" >> notes.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git status",
+     "out": "On branch main\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   notes.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    },
+    {
+     "cmd": "git commit -am \"Add second line\"",
+     "out": "[main 095aafb] Add second line\n 1 file changed, 1 insertion(+)"
+    },
+    {
+     "cmd": "git log --oneline",
+     "out": "095aafb (HEAD -> main) Add second line\n754ad2a Add first line"
+    },
+    {
+     "cmd": "git log",
+     "out": "commit 095aafb37bc9e00f953ed5713ceee67fb6604301 (HEAD -> main)\nAuthor: You <you@example.com>\nDate:   Thu Oct 15 09:02:00 2026 +0000\n\n    Add second line\n\ncommit 754ad2a5956e27315b29cc29f0a58c4d41a16845\nAuthor: You <you@example.com>\nDate:   Thu Oct 15 09:01:00 2026 +0000\n\n    Add first line"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "main",
+    "branches": {
+     "main": "095aafb37bc9e00f953ed5713ceee67fb6604301"
+    },
+    "wt": {
+     "notes.txt": "line one\nline two\n"
+    },
+    "commits": [
+     {
+      "id": "754ad2a5956e27315b29cc29f0a58c4d41a16845",
+      "msg": "Add first line",
+      "parents": [],
+      "tree": {
+       "notes.txt": "line one\n"
+      }
+     },
+     {
+      "id": "095aafb37bc9e00f953ed5713ceee67fb6604301",
+      "msg": "Add second line",
+      "parents": [
+       "754ad2a5956e27315b29cc29f0a58c4d41a16845"
+      ],
+      "tree": {
+       "notes.txt": "line one\nline two\n"
+      }
+     }
+    ],
+    "log": [
+     "Add second line",
+     "Add first line"
+    ],
+    "headTree": {
+     "notes.txt": "line one\nline two\n"
+    },
+    "clean": true
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/\n$ echo \"line one\" > notes.txt\n$ git add notes.txt\n$ git commit -m \"Add first line\"\n[main (root-commit) 754ad2a] Add first line\n 1 file changed, 1 insertion(+)\n create mode 100644 notes.txt\n$ echo \"line two\" >> notes.txt\n$ git status\nOn branch main\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   notes.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n$ git commit -am \"Add second line\"\n[main 095aafb] Add second line\n 1 file changed, 1 insertion(+)\n$ git log --oneline\n095aafb (HEAD -> main) Add second line\n754ad2a Add first line\n$ git log\ncommit 095aafb37bc9e00f953ed5713ceee67fb6604301 (HEAD -> main)\nAuthor: You <you@example.com>\nDate:   Thu Oct 15 09:02:00 2026 +0000\n\n    Add second line\n\ncommit 754ad2a5956e27315b29cc29f0a58c4d41a16845\nAuthor: You <you@example.com>\nDate:   Thu Oct 15 09:01:00 2026 +0000\n\n    Add first line",
+   "error": null
+  }
+ },
+ {
+  "key": "git/git-ch1/challenge-starter",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "main",
+    "branches": {},
+    "wt": {},
+    "commits": [],
+    "log": [],
+    "headTree": {},
+    "clean": true
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/",
+   "error": null
+  }
+ },
+ {
+  "key": "git/git-ch2/sec:Branches",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    },
+    {
+     "cmd": "echo \"v1\" > app.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add app.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git commit -m \"Start app\"",
+     "out": "[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt"
+    },
+    {
+     "cmd": "git branch feature",
+     "out": ""
+    },
+    {
+     "cmd": "git branch",
+     "out": "  feature\n* main"
+    },
+    {
+     "cmd": "git switch feature",
+     "out": "Switched to branch 'feature'"
+    },
+    {
+     "cmd": "git branch",
+     "out": "* feature\n  main"
+    },
+    {
+     "cmd": "git log --oneline",
+     "out": "98cfd21 (HEAD -> feature, main) Start app"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "feature",
+    "branches": {
+     "main": "98cfd213abd4cd09e66c22b7be8785bf97f679dd",
+     "feature": "98cfd213abd4cd09e66c22b7be8785bf97f679dd"
+    },
+    "wt": {
+     "app.txt": "v1\n"
+    },
+    "commits": [
+     {
+      "id": "98cfd213abd4cd09e66c22b7be8785bf97f679dd",
+      "msg": "Start app",
+      "parents": [],
+      "tree": {
+       "app.txt": "v1\n"
+      }
+     }
+    ],
+    "log": [
+     "Start app"
+    ],
+    "headTree": {
+     "app.txt": "v1\n"
+    },
+    "clean": true
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/\n$ echo \"v1\" > app.txt\n$ git add app.txt\n$ git commit -m \"Start app\"\n[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt\n$ git branch feature\n$ git branch\n  feature\n* main\n$ git switch feature\nSwitched to branch 'feature'\n$ git branch\n* feature\n  main\n$ git log --oneline\n98cfd21 (HEAD -> feature, main) Start app",
+   "error": null
+  }
+ },
+ {
+  "key": "git/git-ch2/sec:Work on a branch",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    },
+    {
+     "cmd": "echo \"v1\" > app.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add .",
+     "out": ""
+    },
+    {
+     "cmd": "git commit -m \"Start app\"",
+     "out": "[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt"
+    },
+    {
+     "cmd": "git switch -c feature",
+     "out": "Switched to a new branch 'feature'"
+    },
+    {
+     "cmd": "echo \"login page\" > login.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add login.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git commit -m \"Add login page\"",
+     "out": "[feature 23c294a] Add login page\n 1 file changed, 1 insertion(+)\n create mode 100644 login.txt"
+    },
+    {
+     "cmd": "ls",
+     "out": "app.txt  login.txt"
+    },
+    {
+     "cmd": "git switch main",
+     "out": "Switched to branch 'main'"
+    },
+    {
+     "cmd": "ls",
+     "out": "app.txt"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "main",
+    "branches": {
+     "main": "98cfd213abd4cd09e66c22b7be8785bf97f679dd",
+     "feature": "23c294a7001adc49debec61f5da7f777bd64e311"
+    },
+    "wt": {
+     "app.txt": "v1\n"
+    },
+    "commits": [
+     {
+      "id": "98cfd213abd4cd09e66c22b7be8785bf97f679dd",
+      "msg": "Start app",
+      "parents": [],
+      "tree": {
+       "app.txt": "v1\n"
+      }
+     },
+     {
+      "id": "23c294a7001adc49debec61f5da7f777bd64e311",
+      "msg": "Add login page",
+      "parents": [
+       "98cfd213abd4cd09e66c22b7be8785bf97f679dd"
+      ],
+      "tree": {
+       "app.txt": "v1\n",
+       "login.txt": "login page\n"
+      }
+     }
+    ],
+    "log": [
+     "Start app"
+    ],
+    "headTree": {
+     "app.txt": "v1\n"
+    },
+    "clean": true
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/\n$ echo \"v1\" > app.txt\n$ git add .\n$ git commit -m \"Start app\"\n[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt\n$ git switch -c feature\nSwitched to a new branch 'feature'\n$ echo \"login page\" > login.txt\n$ git add login.txt\n$ git commit -m \"Add login page\"\n[feature 23c294a] Add login page\n 1 file changed, 1 insertion(+)\n create mode 100644 login.txt\n$ ls\napp.txt  login.txt\n$ git switch main\nSwitched to branch 'main'\n$ ls\napp.txt",
+   "error": null
+  }
+ },
+ {
+  "key": "git/git-ch2/sec:Merge",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    },
+    {
+     "cmd": "echo \"v1\" > app.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add .",
+     "out": ""
+    },
+    {
+     "cmd": "git commit -m \"Start app\"",
+     "out": "[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt"
+    },
+    {
+     "cmd": "git switch -c feature",
+     "out": "Switched to a new branch 'feature'"
+    },
+    {
+     "cmd": "echo \"login page\" > login.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add .",
+     "out": ""
+    },
+    {
+     "cmd": "git commit -m \"Add login page\"",
+     "out": "[feature 23c294a] Add login page\n 1 file changed, 1 insertion(+)\n create mode 100644 login.txt"
+    },
+    {
+     "cmd": "git switch main",
+     "out": "Switched to branch 'main'"
+    },
+    {
+     "cmd": "git merge feature",
+     "out": "Updating 98cfd21..23c294a\nFast-forward\n login.txt | 1 +\n 1 file changed, 1 insertion(+)"
+    },
+    {
+     "cmd": "git log --oneline",
+     "out": "23c294a (HEAD -> main, feature) Add login page\n98cfd21 Start app"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "main",
+    "branches": {
+     "main": "23c294a7001adc49debec61f5da7f777bd64e311",
+     "feature": "23c294a7001adc49debec61f5da7f777bd64e311"
+    },
+    "wt": {
+     "app.txt": "v1\n",
+     "login.txt": "login page\n"
+    },
+    "commits": [
+     {
+      "id": "98cfd213abd4cd09e66c22b7be8785bf97f679dd",
+      "msg": "Start app",
+      "parents": [],
+      "tree": {
+       "app.txt": "v1\n"
+      }
+     },
+     {
+      "id": "23c294a7001adc49debec61f5da7f777bd64e311",
+      "msg": "Add login page",
+      "parents": [
+       "98cfd213abd4cd09e66c22b7be8785bf97f679dd"
+      ],
+      "tree": {
+       "app.txt": "v1\n",
+       "login.txt": "login page\n"
+      }
+     }
+    ],
+    "log": [
+     "Add login page",
+     "Start app"
+    ],
+    "headTree": {
+     "app.txt": "v1\n",
+     "login.txt": "login page\n"
+    },
+    "clean": true
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/\n$ echo \"v1\" > app.txt\n$ git add .\n$ git commit -m \"Start app\"\n[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt\n$ git switch -c feature\nSwitched to a new branch 'feature'\n$ echo \"login page\" > login.txt\n$ git add .\n$ git commit -m \"Add login page\"\n[feature 23c294a] Add login page\n 1 file changed, 1 insertion(+)\n create mode 100644 login.txt\n$ git switch main\nSwitched to branch 'main'\n$ git merge feature\nUpdating 98cfd21..23c294a\nFast-forward\n login.txt | 1 +\n 1 file changed, 1 insertion(+)\n$ git log --oneline\n23c294a (HEAD -> main, feature) Add login page\n98cfd21 Start app",
+   "error": null
+  }
+ },
+ {
+  "key": "git/git-ch2/challenge-starter",
+  "lang": "git",
+  "result": {
+   "transcript": [
+    {
+     "cmd": "git init",
+     "out": "Initialized empty Git repository in /project/.git/"
+    },
+    {
+     "cmd": "echo \"v1\" > app.txt",
+     "out": ""
+    },
+    {
+     "cmd": "git add .",
+     "out": ""
+    },
+    {
+     "cmd": "git commit -m \"Start app\"",
+     "out": "[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt"
+    }
+   ],
+   "repo": {
+    "inited": true,
+    "head": "main",
+    "branches": {
+     "main": "98cfd213abd4cd09e66c22b7be8785bf97f679dd"
+    },
+    "wt": {
+     "app.txt": "v1\n"
+    },
+    "commits": [
+     {
+      "id": "98cfd213abd4cd09e66c22b7be8785bf97f679dd",
+      "msg": "Start app",
+      "parents": [],
+      "tree": {
+       "app.txt": "v1\n"
+      }
+     }
+    ],
+    "log": [
+     "Start app"
+    ],
+    "headTree": {
+     "app.txt": "v1\n"
+    },
+    "clean": true
+   },
+   "out": "$ git init\nInitialized empty Git repository in /project/.git/\n$ echo \"v1\" > app.txt\n$ git add .\n$ git commit -m \"Start app\"\n[main (root-commit) 98cfd21] Start app\n 1 file changed, 1 insertion(+)\n create mode 100644 app.txt",
+   "error": null
+  }
+ }
+]
