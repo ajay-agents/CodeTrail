@@ -109,7 +109,7 @@ export function Header() {
               <span className="glyph xs" aria-hidden="true">
                 {(user?.display_name || '?').slice(0, 1).toUpperCase()}
               </span>
-              {user?.display_name}
+              <span className="acct-name">{user?.display_name}</span>
               <svg className="cm-chev" viewBox="0 0 16 16" aria-hidden="true">
                 <path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>

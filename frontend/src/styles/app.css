@@ -541,7 +541,7 @@ code{font-family:var(--mono);font-size:.88em;background:var(--blue-soft);color:v
 .cm-ico{display:grid;place-items:center;min-width:34px;height:28px;border-radius:9px;background:var(--blue-soft);color:var(--blue-deep)}
 .cm-ico .ic{width:18px;height:18px}
 .glyph.xs{min-width:34px;height:28px;padding:0 7px;border-radius:9px;font-size:13px;border:0;box-shadow:none;transform:none;background:var(--g,var(--blue));color:#fff;display:inline-grid;place-items:center;font-family:var(--head-font);font-weight:800}
-@media (max-width:640px){.brand span{display:none}.hdr-in{gap:10px}.xpbar{display:none}.hdr-stats{gap:6px}.stat{padding:6px 10px}}
+@media (max-width:640px){.brand > span:last-child{display:none}.hdr-in{gap:10px}.xpbar{display:none}.hdr-stats{gap:6px}.stat{padding:6px 10px}}
 
 /* ===== DSA language picker ===== */
 .langbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:20px 0 6px}
@@ -576,3 +576,13 @@ code{font-family:var(--mono);font-size:.88em;background:var(--blue-soft);color:v
   .hdr-right{gap:8px}
   .hdr-stats{display:none}
 }
+.acct-name{display:inline-block;max-width:16ch;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:480px){
+  /* Phones: show only the initial; the name stays available to screen readers. */
+  .acct-name{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .cmenu.acct .cm-btn{padding-right:8px}
+}
+
+/* ---------- mobile overflow ---------- */
+/* Decorative backgrounds bleed past .wrap; clip them so phones don't get a sideways scroll. */
+main{overflow-x:clip}

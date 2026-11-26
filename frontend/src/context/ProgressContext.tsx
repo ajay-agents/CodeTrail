@@ -4,9 +4,8 @@ import { useAuth } from './AuthContext';
 import { useToast } from './ToastContext';
 import { BADGES, COURSES } from '../data/courses';
 import { QUESTS } from '../data/quests';
-import { chDone, checkPolyEligible, ensureFreshDay, getChapterProgress } from '../lib/progressSelectors';
+import { checkPolyEligible, ensureFreshDay, getChapterProgress } from '../lib/progressSelectors';
 import { DEFAULT_PROGRESS, type ProgressData } from '../types/progress';
-import type { Chapter, Course } from '../types/content';
 
 interface ProgressContextValue {
   data: ProgressData;
@@ -18,7 +17,7 @@ interface ProgressContextValue {
   recordQuizCorrect: () => void;
   finishQuiz: (chapterId: string, correct: number, total: number) => number;
   setChallengeDone: (chapterId: string) => void;
-  checkChapterComplete: (course: Course, chapter: Chapter) => boolean;
+  completeChapter: (chapterId: string) => void;
   claimQuest: (questId: string) => void;
   setDsaLang: (lang: string) => void;
   setLast: (course: string, ch: string) => void;
@@ -35,17 +34,24 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
   const { toast } = useToast();
   const [data, setData] = useState<ProgressData>(DEFAULT_PROGRESS);
-  const [loading, setLoading] = useState(true);
+  // Id of the user whose progress is in `data` (null = signed out). Deriving `loading` from it means
+  // pages never see the gap between sign-in and the fetch starting as "loaded with empty progress".
+  const [loadedFor, setLoadedFor] = useState<number | null | undefined>(undefined);
+  const loading = loadedFor !== (user?.id ?? null);
   const saveTimer = useRef<number | undefined>(undefined);
   const skipNextSave = useRef(false);
+  const renderedData = useRef(data);
+
+  useEffect(() => {
+    renderedData.current = data;
+  }, [data]);
 
   useEffect(() => {
     if (!user) {
       setData(DEFAULT_PROGRESS);
-      setLoading(false);
+      setLoadedFor(null);
       return;
     }
-    setLoading(true);
     api
       .getProgress()
       .then((res) => {
@@ -53,7 +59,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         skipNextSave.current = true;
         setData(ensureFreshDay(loaded));
       })
-      .finally(() => setLoading(false));
+      .finally(() => setLoadedFor(user.id));
   }, [user]);
 
   useEffect(() => {
@@ -83,13 +89,9 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   const award = useCallback(
     (badgeId: string) => {
-      let didAward = false;
-      mutate((d) => {
-        if (d.badges[badgeId]) return d;
-        didAward = true;
-        return { ...d, badges: { ...d.badges, [badgeId]: true } };
-      });
-      if (didAward) toast('Badge unlocked: ' + badgeName(badgeId));
+      const isNew = !renderedData.current.badges[badgeId];
+      mutate((d) => (d.badges[badgeId] ? d : { ...d, badges: { ...d.badges, [badgeId]: true } }));
+      if (isNew) toast('Badge unlocked: ' + badgeName(badgeId));
     },
     [mutate, toast],
   );
@@ -160,21 +162,17 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     [mutate, toast, award],
   );
 
-  const checkChapterComplete = useCallback(
-    (course: Course, chapter: Chapter) => {
-      let completed = false;
+  // Callers check chDone/done against rendered data first: a flag set inside the updater
+  // isn't reliable because React may run the updater later, during the next render.
+  const completeChapter = useCallback(
+    (chapterId: string) => {
       mutate((d) => {
-        const chp = getChapterProgress(d, chapter.id);
-        if (chp.done || !chDone(d, chapter)) return d;
-        completed = true;
-        return { ...d, ch: { ...d.ch, [chapter.id]: { ...chp, done: true } } };
+        const chp = getChapterProgress(d, chapterId);
+        if (chp.done) return d;
+        return { ...d, ch: { ...d.ch, [chapterId]: { ...chp, done: true } } };
       });
-      if (completed) {
-        addXP(25);
-        award('chapter');
-      }
-      void course;
-      return completed;
+      addXP(25);
+      award('chapter');
     },
     [mutate, addXP, award],
   );
@@ -216,7 +214,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   );
 
   const resetAll = useCallback(() => {
-    setData({ ...DEFAULT_PROGRESS, lastDay: new Date().toISOString().slice(0, 10) });
+    // ensureFreshDay fills in today's daily quests; without them the dashboard waits on a reload.
+    setData(ensureFreshDay(DEFAULT_PROGRESS));
     toast('Progress reset');
   }, [toast]);
 
@@ -241,7 +240,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       recordQuizCorrect,
       finishQuiz,
       setChallengeDone,
-      checkChapterComplete,
+      completeChapter,
       claimQuest,
       setDsaLang,
       setLast,
@@ -257,7 +256,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       recordQuizCorrect,
       finishQuiz,
       setChallengeDone,
-      checkChapterComplete,
+      completeChapter,
       claimQuest,
       setDsaLang,
       setLast,

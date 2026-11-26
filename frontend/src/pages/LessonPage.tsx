@@ -3,7 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { courseOf } from '../data/courses';
 import { useProgress } from '../context/ProgressContext';
 import { useDialog } from '../context/DialogContext';
-import { getChapterProgress, hasContent, learnDone, quizDone } from '../lib/progressSelectors';
+import { chDone, getChapterProgress, hasContent, learnDone, quizDone } from '../lib/progressSelectors';
 import { chIc } from '../lib/chIc';
 import { ICON, ic } from '../lib/icons.js';
 import { burst } from '../lib/burst';
@@ -16,7 +16,7 @@ type Stage = 'learn' | 'quiz' | 'challenge';
 export function LessonPage() {
   const { courseId, chapterId } = useParams();
   const navigate = useNavigate();
-  const { data, setLast, checkChapterComplete, toggleSectionDone } = useProgress();
+  const { data, loading, setLast, completeChapter, toggleSectionDone } = useProgress();
   const { showDialog, closeDialog } = useDialog();
 
   const course = courseId ? courseOf(courseId) : undefined;
@@ -24,10 +24,12 @@ export function LessonPage() {
 
   const [stage, setStage] = useState<Stage>('learn');
   const [sec, setSec] = useState(0);
+  const [completionCheck, setCompletionCheck] = useState(false);
   const mountedFor = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!course || !chapter) return;
+    // Wait for saved progress, otherwise a refreshed page always opens at the first lesson.
+    if (!course || !chapter || loading) return;
     const key = `${course.id}/${chapter.id}`;
     if (mountedFor.current === key) return;
     mountedFor.current = key;
@@ -46,12 +48,20 @@ export function LessonPage() {
     }
     setLast(course.id, chapter.id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [course?.id, chapter?.id]);
+  }, [course?.id, chapter?.id, loading]);
 
-  function tryShowCompletion() {
+  // The quiz/challenge stages request a check; it runs here once their progress update has rendered.
+  useEffect(() => {
+    if (!completionCheck || !course || !chapter) return;
+    setCompletionCheck(false);
+    if (getChapterProgress(data, chapter.id).done || !chDone(data, chapter)) return;
+    completeChapter(chapter.id);
+    showCompletion();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [completionCheck, data]);
+
+  function showCompletion() {
     if (!course || !chapter) return;
-    const justCompleted = checkChapterComplete(course, chapter);
-    if (!justCompleted) return;
     const i = course.chapters.indexOf(chapter);
     const nx = course.chapters[i + 1];
     const nextOpen = nx && hasContent(nx);
@@ -165,11 +175,11 @@ export function LessonPage() {
           chapter={chapter}
           onGoToLearn={() => setStage('learn')}
           onGoToChallenge={() => setStage('challenge')}
-          onFinished={tryShowCompletion}
+          onFinished={() => setCompletionCheck(true)}
         />
       )}
       {stage === 'challenge' && (
-        <ChallengeStage key={chapter.id} course={course} chapter={chapter} onCompleted={tryShowCompletion} />
+        <ChallengeStage key={chapter.id} course={course} chapter={chapter} onCompleted={() => setCompletionCheck(true)} />
       )}
     </div>
   );
