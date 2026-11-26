@@ -28,6 +28,18 @@ npm run dev
 
 The dev server runs on `http://localhost:5173`. It talks to the backend at `http://localhost:8000` by default — override with `VITE_API_URL` in `frontend/.env.development` if your backend runs elsewhere.
 
+## Deployment (free tiers)
+
+Frontend on Vercel, backend on Render, database on Neon Postgres. Don't use SQLite in production on Render's free tier — its disk is wiped on every restart/redeploy.
+
+1. **Database (Neon):** create a project and copy its connection string (`postgresql://...?sslmode=require`).
+2. **Backend (Render):** New → Blueprint → pick this repo; it reads `render.yaml`. When prompted, set:
+   - `DATABASE_URL` — the Neon connection string
+   - `CORS_ORIGINS` — a JSON list with your frontend URL, e.g. `["https://codetrail.vercel.app"]` (fill in after step 3, then redeploy)
+
+   `JWT_SECRET` is generated automatically. Check `https://<service>.onrender.com/health` returns `{"status":"ok"}`. The free service sleeps after ~15 min idle, so the first request after that takes ~30–60s.
+3. **Frontend (Vercel):** New Project → this repo, Root Directory `frontend` (Vite preset). Add env var `VITE_API_URL` = your Render URL (no trailing slash). `frontend/vercel.json` rewrites all routes to `index.html` so deep links work.
+
 ## Course content status
 
 The original prototype only had full lessons (sections + quiz + challenge) for chapters 1–2 of each 8-chapter course; chapters 3–8 were stubs with just a title and topic list. Each course's mini-interpreter was also deliberately minimal — e.g. the original Python runner had no loops, functions, or data structures at all.
