@@ -35,7 +35,7 @@ Frontend on Vercel, backend on Render, database on Neon Postgres. Don't use SQLi
 1. **Database (Neon):** create a project and copy its connection string (`postgresql://...?sslmode=require`).
 2. **Backend (Render):** New → Blueprint → pick this repo; it reads `render.yaml`. When prompted, set:
    - `DATABASE_URL` — the Neon connection string
-   - `CORS_ORIGINS` — a JSON list with your frontend URL, e.g. `["https://codetrail.vercel.app"]` (fill in after step 3, then redeploy)
+   - `CORS_ORIGINS` — your frontend URL, e.g. `https://codetrail.vercel.app` (comma-separate multiple; fill in after step 3, then redeploy)
 
    `JWT_SECRET` is generated automatically. Check `https://<service>.onrender.com/health` returns `{"status":"ok"}`. The free service sleeps after ~15 min idle, so the first request after that takes ~30–60s.
 3. **Frontend (Vercel):** New Project → this repo, Root Directory `frontend` (Vite preset). Add env var `VITE_API_URL` = your Render URL (no trailing slash). `frontend/vercel.json` rewrites all routes to `index.html` so deep links work.
