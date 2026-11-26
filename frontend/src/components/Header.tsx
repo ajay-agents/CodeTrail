@@ -6,6 +6,7 @@ import { esc } from '../lib/highlight.js';
 import { level } from '../lib/levels';
 import { useProgress } from '../context/ProgressContext';
 import { useAuth } from '../context/AuthContext';
+import { useConfirmReset } from '../hooks/useConfirmReset';
 
 export function Header() {
   const navigate = useNavigate();
@@ -14,6 +15,7 @@ export function Header() {
   const { user, logout } = useAuth();
   const [menu, setMenu] = useState(false);
   const [acctMenu, setAcctMenu] = useState(false);
+  const confirmReset = useConfirmReset();
   const lv = level(data.xp);
   const current = courseId ? courseOf(courseId) : undefined;
 
@@ -116,6 +118,17 @@ export function Header() {
             </button>
             {acctMenu && (
               <div className="cm-pop" role="menu" onMouseLeave={() => setAcctMenu(false)}>
+                <button
+                  role="menuitem"
+                  type="button"
+                  onClick={() => {
+                    setAcctMenu(false);
+                    confirmReset();
+                  }}
+                >
+                  <span className="cm-ico" dangerouslySetInnerHTML={{ __html: ic('reset') }} />
+                  Reset progress
+                </button>
                 <button
                   role="menuitem"
                   type="button"

@@ -26,7 +26,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body
 button{font:inherit;color:inherit}
 h1,h2,h3{font-family:var(--head-font);line-height:1.15;margin:0;letter-spacing:-.01em}
 p{margin:0}
-code{font-family:var(--mono);font-size:.88em;background:var(--blue-soft);color:var(--blue-deep);padding:.1em .4em;border-radius:6px}
+code{font-family:var(--mono);font-size:.88em;overflow-wrap:anywhere;background:var(--blue-soft);color:var(--blue-deep);padding:.1em .4em;border-radius:6px}
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
@@ -280,15 +280,15 @@ code{font-family:var(--mono);font-size:.88em;background:var(--blue-soft);color:v
 .foot button{background:none;border:0;color:var(--muted);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0}
 
 @media (max-width:920px){
-  .home{grid-template-columns:1fr;gap:28px}
-  .courses{grid-template-columns:1fr}
+  .home{grid-template-columns:minmax(0,1fr);gap:28px}
+  .courses{grid-template-columns:minmax(0,1fr)}
   .cnav{display:none}
   .bgrid.four{grid-template-columns:1fr 1fr}
   .side{display:contents}
   .panel{order:-1}
   .map-col{order:0}
   .extras{order:1;display:grid;gap:22px}
-  .l-grid{grid-template-columns:1fr;gap:22px}
+  .l-grid{grid-template-columns:minmax(0,1fr);gap:22px}
   .sec-nav{position:static;display:flex;overflow-x:auto;gap:6px}
   .sec-btn{white-space:nowrap}
 }
@@ -397,8 +397,8 @@ code{font-family:var(--mono);font-size:.88em;background:var(--blue-soft);color:v
 .bgrid.six .bdg.off i{filter:none;background:var(--bg);border-color:var(--line)}
 @media (max-width:1100px){.bgrid.six{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:920px){
-  .hero{grid-template-columns:1fr;gap:34px}
-  .duo{grid-template-columns:1fr}
+  .hero{grid-template-columns:minmax(0,1fr);gap:34px}
+  .duo{grid-template-columns:minmax(0,1fr)}
   .courses{gap:28px}
   .sec-h{margin-top:48px}
 }
@@ -586,3 +586,12 @@ code{font-family:var(--mono);font-size:.88em;background:var(--blue-soft);color:v
 /* ---------- mobile overflow ---------- */
 /* Decorative backgrounds bleed past .wrap; clip them so phones don't get a sideways scroll. */
 main{overflow-x:clip}
+/* The account menu sits at the right edge, so open it leftwards; keep both menus on screen. */
+.cmenu.acct .cm-pop{left:auto;right:0}
+.cm-pop{max-width:calc(100vw - 24px)}
+@media (max-width:640px){
+  .tabs{gap:2px}
+  .tab{padding:12px 10px;gap:7px}
+}
+/* Phones: the floating reset button covers lesson content; reset lives in the account menu instead. */
+@media (max-width:640px){.reset-fab{display:none}}
